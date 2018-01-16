@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.SignUp">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_gravity="center">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_layout"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/wds"
+                    android:layout_width="@dimen/logo_width"
+                    android:layout_height="@dimen/logo_height"
+                    android:layout_gravity="center_horizontal"
+                    android:textAlignment="center"
+                    android:src="@drawable/logo"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_tag_line"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/toolbar_header_size"
+                    android:layout_marginTop="@dimen/tag_line_top_margin"
+                    android:textColor="@color/pink"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:id="@+id/input_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/views_height"
+                        android:ems="10"
+                        android:hint="@string/username_placeholder"
+                        android:textColorHint="@color/edit_text_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailSubject"
+                        android:paddingLeft="@dimen/username_left_padding"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:focusable="true"
+                        android:textSize="@dimen/check_in_text_size"
+                        android:focusableInTouchMode="true"
+                        android:background="@android:color/white"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:maxLines="1">
+                        <requestFocus/></EditText>
+                    <EditText
+                        android:id="@+id/input_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/views_height"
+                        android:ems="10"
+                        android:hint="@string/password_placeholder"
+                        android:textColorHint="@color/edit_text_hint"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:paddingLeft="@dimen/username_left_padding"
+                        android:textSize="@dimen/check_in_text_size"
+                        android:layout_marginLeft="@dimen/username_password_top_bottom_margin"
+                        android:layout_marginRight="@dimen/username_password_top_bottom_margin"
+                        android:layout_marginBottom="@dimen/username_password_top_bottom_margin"
+                        android:background="@android:color/white"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:singleLine="true" />
+
+                    <EditText
+                        android:id="@+id/input_re_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/views_height"
+                        android:ems="10"
+                        android:hint="@string/confirm_password_placeholder"
+                        android:textColorHint="@color/edit_text_hint"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingLeft="@dimen/username_left_padding"
+                        android:textSize="@dimen/check_in_text_size"
+                        android:layout_marginLeft="@dimen/username_password_top_bottom_margin"
+                        android:layout_marginRight="@dimen/username_password_top_bottom_margin"
+                        android:layout_marginBottom="@dimen/username_password_top_bottom_margin"
+                        android:background="@android:color/white"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:singleLine="true" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/views_height"
+                    android:layout_marginTop="@dimen/username_password_top_bottom_margin"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/cancel"
+                        android:layout_marginLeft="@dimen/username_password_top_bottom_margin"
+                        android:layout_marginRight="@dimen/username_password_top_bottom_margin"
+                        android:background="@drawable/sign_in_round"
+                        android:textAllCaps="false"
+                        android:textSize="@dimen/check_in_text_size"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/cancel_button"/>
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/username_password_top_bottom_margin"
+                        android:layout_marginRight="@dimen/username_password_top_bottom_margin"
+                        android:background="@drawable/sign_in_round"
+                        android:textAllCaps="false"
+                        android:text="@string/sign_up"
+                        android:textSize="@dimen/check_in_text_size"
+                        android:textColor="@android:color/white"
+                        android:id="@+id/sign_up_button"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="center">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:indeterminateTintMode="src_atop"
+                android:indeterminateTint="@color/pink"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

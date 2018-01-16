@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="@dimen/task_list_bottom_margin"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="0dp"
+        android:layout_weight=".75"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/check_in_text_size"
+        android:textColor="@android:color/white"
+        android:paddingLeft="@dimen/check_in_padding"
+        android:textAlignment="textStart"
+        />
+    <TextView
+        android:id="@+id/childtaskName"
+        android:layout_width="0dp"
+        android:layout_weight=".25"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/check_in_text_size"
+        android:gravity="right"
+        android:paddingRight="@dimen/check_in_padding"
+        android:textColor="@android:color/white" />
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/child_view_layput_bg"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/expend_collapse_id"
+            android:src="@drawable/right_arrow"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/expent_collapse_status_id"
+            android:text="true"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Today"
+            android:id="@+id/dateHeader"
+            android:gravity="center|left"
+            android:textColor="@color/check_in"
+            android:paddingLeft="@dimen/username_password_top_bottom_margin"
+            android:paddingTop="@dimen/username_password_top_bottom_margin"
+            android:paddingBottom="@dimen/username_password_top_bottom_margin"
+            android:textSize="@dimen/task_date_header" />
+
+    </LinearLayout>
+
+    <com.mobiledi.earnit.customcontrol.ExpandableHeightListView
+        android:layout_width="match_parent"
+        android:id="@+id/children_task_list"
+        android:paddingBottom="@dimen/username_password_top_bottom_margin"
+        android:layout_height="wrap_content" >
+
+    </com.mobiledi.earnit.customcontrol.ExpandableHeightListView>
+
+</LinearLayout>

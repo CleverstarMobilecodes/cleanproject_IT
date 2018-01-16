@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center">
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.mobiledi.earnit.activity.ChildDashboard"
+        android:background="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/child_dashboard_header"
+                android:layout_width="0dp"
+                android:layout_weight=".7"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/main_font"
+                android:maxLines="2"
+                android:textSize="@dimen/task_date_header"
+                android:scaleType="centerInside" />
+
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:layout_weight=".2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:siRadius="1dp"
+                app:siBorderWidth="2dp"
+                app:siBorderColor="@android:color/white"
+                app:siSquare="true"
+                android:id="@+id/child_dashboard_avatar"
+                android:src="@drawable/checked_in" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".1"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/task_rejection_text_size"
+                android:textStyle="bold"
+                android:text="..."
+                android:layout_marginLeft="-12dp"
+                android:layout_marginBottom="12dp"
+                android:gravity="bottom"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="60dp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="All Tasks"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/task_date_header"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/child_task_date_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/background"
+                android:fillViewport="true" />
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/pink"/>
+    </RelativeLayout>
+</FrameLayout>

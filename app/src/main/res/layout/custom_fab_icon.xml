@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="@dimen/feb_menu_size"
+        android:layout_height="@dimen/feb_menu_size"
+        app:siSquare="true"
+        android:padding="1dp"
+        android:id="@+id/feb_icon_img" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/feb_icon_text"
+        android:textColor="@color/pink"
+        android:textSize="@dimen/feb_lable_text_size"
+        android:paddingLeft="1dp"
+        android:textStyle="bold"/>
+</LinearLayout>

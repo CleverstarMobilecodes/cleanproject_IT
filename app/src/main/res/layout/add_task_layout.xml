@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/add_task_header"
+            android:layout_width="0dp"
+            android:layout_weight=".75"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/main_font"
+            android:maxLines="2"
+            android:textSize="@dimen/toolbar_header_size" />
+
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:siRadius="1dp"
+            app:siBorderWidth="1.5dp"
+            app:siBorderColor="@android:color/white"
+            app:siSquare="true"
+            android:id="@+id/add_task_avatar"
+            android:src="@drawable/default_avatar" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".05"
+            android:layout_height="match_parent"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/task_rejection_text_size"
+            android:textStyle="bold"
+            android:text="..."
+            android:layout_marginLeft="-10dp"
+            android:layout_marginBottom="0dp"
+            android:gravity="bottom"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/username_password_top_bottom_margin"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/vertical_line"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/darker_gray"/>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginTop="@dimen/add_task_top_margin"
+            android:layout_marginLeft="@dimen/add_task_left_margin"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="match_parent"
+                android:text="Task Name:"
+                android:gravity="center|left"
+                android:textSize="@dimen/check_in_text_size"
+                android:textColor="@color/main_font"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:layout_marginRight="@dimen/add_task_textview_left_margin"
+                android:layout_marginLeft="@dimen/add_task_textview_left_margin"
+                android:paddingLeft="@dimen/add_task_textview_left_margin"
+                android:hint="New Task"
+                android:textColorHint="@color/edit_text_hint"
+                android:textColor="@color/main_font"
+                android:id="@+id/task_name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:textSize="@dimen/check_in_text_size"
+                android:background="@drawable/amount_edittext_border"
+                android:singleLine="true">
+                <requestFocus/>
+            </EditText>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginLeft="@dimen/add_task_left_margin"
+            android:layout_marginTop="@dimen/add_task_top_margin"
+            android:layout_marginBottom="@dimen/add_task_top_margin"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Apply to goal:"
+                android:textSize="@dimen/check_in_text_size"
+                android:paddingRight="@dimen/add_task_textview_left_margin"
+                android:textColor="@color/main_font"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="match_parent"
+                android:id="@+id/apply_to_goal_spinner"
+                android:textAllCaps="false"
+                android:textSize="@dimen/check_in_text_size"
+                android:gravity="center|start"
+                android:paddingLeft="@dimen/add_task_textview_left_margin"
+                android:layout_marginRight="@dimen/add_task_textview_left_margin"
+                android:layout_marginLeft="@dimen/add_task_textview_left_margin"
+                android:textColor="@color/main_font"
+                android:paddingRight="5dp"
+                android:drawableEnd="@android:drawable/arrow_down_float"
+                android:background="@drawable/round_corner"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginLeft="@dimen/add_task_left_margin"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:text="Assign to:"
+                android:textSize="@dimen/check_in_text_size"
+                android:textColor="@color/main_font"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="match_parent"
+                android:id="@+id/assign_to_id"
+                android:textAllCaps="false"
+                android:textSize="@dimen/check_in_text_size"
+                android:paddingLeft="@dimen/add_task_textview_left_margin"
+                android:textAlignment="textStart"
+                android:layout_marginRight="@dimen/add_task_textview_left_margin"
+                android:layout_marginLeft="@dimen/add_task_textview_left_margin"
+                android:textColor="@color/main_font"
+                android:background="@drawable/round_corner"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginLeft="@dimen/add_task_left_margin"
+            android:layout_marginTop="@dimen/add_task_top_margin"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="match_parent"
+                android:textAlignment="textStart"
+                android:text="Amount:"
+                android:textSize="@dimen/check_in_text_size"
+                android:textColor="@color/main_font"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="match_parent"
+                android:textAlignment="textStart"
+                android:hint="00"
+                android:textColorHint="@color/edit_text_hint"
+                android:layout_marginRight="@dimen/add_task_textview_left_margin"
+                android:layout_marginLeft="@dimen/add_task_textview_left_margin"
+                android:paddingLeft="@dimen/add_task_textview_left_margin"
+                android:textColor="@color/main_font"
+                android:id="@+id/amount_id"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:textSize="@dimen/check_in_text_size"
+                android:background="@drawable/amount_edittext_border"
+                android:singleLine="true"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Task Details:"
+            android:textColor="@color/main_font"
+            android:layout_marginLeft="@dimen/add_task_left_margin"
+            android:layout_marginTop="@dimen/add_task_top_margin"
+            android:textSize="@dimen/check_in_text_size"/>
+        <EditText
+            android:id="@+id/task_detail"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="@dimen/add_task_top_margin"
+            android:layout_marginLeft="@dimen/add_task_left_margin"
+            android:layout_marginRight="@dimen/add_task_textview_left_margin"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ems="10"
+            android:hint="Task details"
+            android:textColorHint="@color/edit_text_hint"
+            android:gravity="start"
+            android:nextFocusDown="@+id/checkbox"
+            android:textColor="@color/main_font"
+            android:padding="8dp"
+            android:textSize="@dimen/check_in_text_size"
+            android:background="@drawable/edittext_background"/>
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginLeft="@dimen/add_task_left_margin"
+            android:layout_marginTop="@dimen/add_task_top_margin"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight=".8"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="Requires Photo:"
+                android:textSize="@dimen/check_in_text_size"
+                android:paddingRight="@dimen/add_task_textview_left_margin"
+                android:textColor="@color/main_font"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight=".16"
+                android:layout_height="28dp"
+                android:id="@+id/checkbox"
+                android:text=""
+                android:gravity="center"
+                android:textColor="@color/main_font"
+                android:background="@drawable/round_corner"/>
+            <TextView
+                android:id="@+id/require_photo"
+                android:layout_width="0dp"
+                android:layout_weight="1.02"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="@dimen/add_task_left_margin"
+            android:layout_marginTop="@dimen/add_task_top_margin"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight=".83"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:text="Repeats:"
+                android:textSize="@dimen/check_in_text_size"
+                android:paddingRight="@dimen/add_task_textview_left_margin"
+                android:textColor="@color/main_font"/>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.2"
+                android:layout_height="match_parent"
+                android:id="@+id/repeat_frequency"
+                android:textAllCaps="false"
+                android:textSize="@dimen/check_in_text_size"
+                android:paddingLeft="@dimen/add_task_textview_left_margin"
+                android:gravity="center|start"
+                android:layout_marginRight="@dimen/add_task_textview_left_margin"
+                android:layout_marginLeft="@dimen/add_task_textview_left_margin"
+                android:textColor="@color/main_font"
+                android:drawableEnd="@android:drawable/arrow_down_float"
+                android:paddingRight="5dp"
+                android:background="@drawable/round_corner"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginLeft="@dimen/add_task_left_margin"
+            android:layout_marginTop="@dimen/add_task_top_margin"
+            android:orientation="horizontal">
+            <TextView android:layout_width="0dp"
+                android:layout_weight="1.05"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:text="Due Date:"
+                android:layout_marginRight="@dimen/add_task_textview_left_margin"
+                android:textSize="@dimen/check_in_text_size"
+                android:textColor="@color/main_font"/>
+
+            <ImageButton
+                android:id="@+id/due_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".3"
+                android:background="@color/background"
+                android:src="@drawable/ic_event_black_36dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1.47"
+                android:textColor="@color/main_font"
+                android:textSize="@dimen/check_in_text_size"
+                android:id="@+id/date_time_textview"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="@dimen/views_height"
+            android:layout_marginTop="@dimen/add_task_top_margin"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Cancel"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/main_font"
+                android:textAllCaps="false"
+                android:id="@+id/cancel"
+                android:textSize="@dimen/check_in_text_size"
+                android:background="@drawable/sign_in_round"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="Save"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/main_font"
+                android:textAllCaps="false"
+                android:id="@+id/save"
+                android:textSize="@dimen/check_in_text_size"
+                android:background="@drawable/sign_in_round"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/pink"/>
+    </RelativeLayout>
+    </FrameLayout>

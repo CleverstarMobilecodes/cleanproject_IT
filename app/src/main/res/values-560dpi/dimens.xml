@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--login screen -->
+    <dimen name="logo_width">330dp</dimen>
+    <dimen name="logo_height">300dp</dimen>
+    <dimen name="tag_line_text_size">27sp</dimen>
+    <dimen name="tag_line_top_margin">-30dp</dimen>
+    <dimen name="username_password_block_top_margin">60dp</dimen>
+    <dimen name="username_left_padding">15dp</dimen>
+    <dimen name="childlist_left_padding">25dp</dimen>
+    <dimen name="username_password_top_bottom_margin">10dp</dimen>
+    <dimen name="horizontal_line_width">1dp</dimen>
+    <dimen name="sign_in_top_margin">30dp</dimen>
+    <dimen name="sign_in_left_right_margin">20dp</dimen>
+    <dimen name="sign_in_text_size">20sp</dimen>
+    <dimen name="sign_up_block_top_margin">10dp</dimen>
+    <dimen name="sign_up_block_textview_text_size">15sp</dimen>
+    <dimen name="sign_up_button_height">30dp</dimen>
+    <dimen name="sign_up_button_text_size">18sp</dimen>
+    <dimen name="sign_up_button_left_margin">10dp</dimen>
+
+
+    <!--single child view in parent dashboard-->
+    <dimen name="task_date_header">20sp</dimen>
+    <dimen name="child_padding">10dp</dimen>
+    <dimen name="check_in_text_size">16sp</dimen>
+    <dimen name="check_in_padding">10dp</dimen>
+    <dimen name="task_list_bottom_margin">2dp</dimen>
+    <dimen name="tips_margin">10dp</dimen>
+    <dimen name="tips_bottom_margin">0dp</dimen>
+    <dimen name="tips_top_margin">10dp</dimen>
+    <dimen name="tops_text_size">20sp</dimen>
+    <dimen name="task_layout_text_size">18sp</dimen>
+
+    <!--Nav Drawer-->
+    <dimen name="drawer_text_size">14sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="task_view_text_size">13sp</dimen>
+    <dimen name="task_view_bottom_margin">8dp</dimen>
+
+    <!--Add Task-->
+    <dimen name="add_task_textview_left_margin">10dp</dimen>
+    <dimen name="add_task_left_margin">10dp</dimen>
+    <dimen name="add_task_top_margin">9dp</dimen>
+
+    <!--TASK REJECTION SCREEN
+    <dimen name="task_rejection_text_size">23sp</dimen>
+    <dimen name="task_description_left_right_margin">20dp</dimen>
+    <dimen name="task_description_top_margin">10dp</dimen>
+    <dimen name="task_due_Date_left_padding">10dp</dimen>
+    <dimen name="completed_text_bottom_margin">-15dp</dimen>
+    <dimen name="completed_text_size">28sp</dimen>
+    <dimen name="task_image_height">200dp</dimen>
+    <dimen name="task_image_left_right_margin">60dp</dimen>
+    <dimen name="comment_text_top_margin">-15dp</dimen>
+    <dimen name="comment_text_left_margin">20dp</dimen>
+    <dimen name="comment_edittext_height">100dp</dimen>
+    <dimen name="comment_edittext_margin">5dp</dimen>
+    <dimen name="comment_edittext_padding">10dp</dimen>
+    <dimen name="button_layout_top_margin">10dp</dimen>
+    <dimen name="button_layout_views_height">30dp</dimen>
+    <dimen name="button_layout_left_right_margin">40dp</dimen>
+    <dimen name="button_layout_right_left_margin">20dp</dimen>-->
+
+    <!--TASK REJECTION SCREEN-->
+    <dimen name="task_rejection_text_size">18sp</dimen>
+    <dimen name="task_description_left_right_margin">20dp</dimen>
+    <dimen name="task_description_top_margin">10dp</dimen>
+    <dimen name="task_due_Date_left_padding">10dp</dimen>
+    <dimen name="completed_text_bottom_margin">-45dp</dimen>
+    <dimen name="completed_text_size">18sp</dimen>
+    <dimen name="task_image_height">250dp</dimen>
+    <dimen name="task_image_left_right_margin">60dp</dimen>
+    <dimen name="comment_text_top_margin">-45dp</dimen>
+    <dimen name="comment_text_left_margin">20dp</dimen>
+    <dimen name="comment_edittext_height">80dp</dimen>
+    <dimen name="comment_edittext_margin">5dp</dimen>
+    <dimen name="comment_edittext_padding">10dp</dimen>
+    <dimen name="button_layout_top_margin">10dp</dimen>
+    <dimen name="button_layout_views_height">35dp</dimen>
+    <dimen name="button_layout_left_right_margin">40dp</dimen>
+    <dimen name="button_layout_right_left_margin">20dp</dimen>
+    <dimen name="task_approval_decline_dialog_width">350dp</dimen>
+
+    <dimen name="blue_sub_action_button_size">80dp</dimen>
+    <dimen name="progress_bar_bottom_margin">30dp</dimen>
+    <dimen name="feb_menu_size">18dp</dimen>
+    <dimen name="feb_lable_text_size">10sp</dimen>
+
+    <!-- FLOATING MENU -->
+    <dimen name="floating_menu_list_size">13sp</dimen>
+    <dimen name="floating_menu_avatar_size">80dp</dimen>
+
+
+    <dimen name="views_height">40dp</dimen>
+
+    <!--GOAL SCREEN -->
+    <dimen name="textview_padding">75dp</dimen>
+
+</resources>

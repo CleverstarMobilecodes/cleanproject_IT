@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/feb_menu_layout"
+    android:layout_width="270dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/feb_menu_bg"
+    android:orientation="vertical">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_layout"
+                android:fitsSystemWindows="true"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textSize="@dimen/floating_menu_list_size"
+                    android:layout_gravity="center|left"
+                    android:id="@+id/fb_add_task"
+                    android:textColor="@color/pink"
+                    android:padding="@dimen/feb_list_padding"
+                    android:text="@string/add_task" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textSize="@dimen/floating_menu_list_size"
+                    android:textColor="@color/pink"
+                    android:id="@+id/fb_a11_task"
+                    android:padding="@dimen/feb_list_padding"
+                    android:layout_gravity="center|left"
+                    android:text="@string/all_task" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textSize="@dimen/floating_menu_list_size"
+                    android:textColor="@color/pink"
+                    android:id="@+id/fb_approve_task"
+                    android:padding="@dimen/feb_list_padding"
+                    android:layout_gravity="center|left"
+                    android:text="@string/approve_task" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textSize="@dimen/floating_menu_list_size"
+                    android:id="@+id/fb_balance"
+                    android:textColor="@color/pink"
+                    android:padding="@dimen/feb_list_padding"
+                    android:layout_gravity="center|left"
+                    android:text="@string/balance" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textSize="@dimen/floating_menu_list_size"
+                    android:id="@+id/fb_goal"
+                    android:textColor="@color/pink"
+                    android:padding="@dimen/feb_list_padding"
+                    android:layout_gravity="center|left"
+                    android:text="@string/goal" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:textSize="@dimen/floating_menu_list_size"
+                    android:id="@+id/fb_message"
+                    android:textColor="@color/pink"
+                    android:padding="@dimen/feb_list_padding"
+                    android:layout_gravity="center|left"
+                    android:text="@string/message" />
+            </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/loadingPanel"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:visibility="visible"
+            android:layout_margin="3dp"
+            android:layout_gravity="right">
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:layout_width="@dimen/floating_menu_avatar_size"
+            android:layout_height="@dimen/floating_menu_avatar_size"
+            android:src="@drawable/default_avatar"
+            app:siRadius="1dp"
+            app:siBorderWidth="1.5dp"
+            app:siBorderColor="@android:color/white"
+            app:siSquare="true"
+            android:id="@+id/fb_user_image"
+            android:layout_gravity="center" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

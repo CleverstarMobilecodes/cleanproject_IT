@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/task_details_layout"
+        android:paddingLeft="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp">
+
+        <Button
+            android:id="@+id/child_task_staus"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:background="@drawable/gray_status" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:paddingLeft="10dp"
+            android:id="@+id/task_description_layout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|left|bottom"
+                android:textSize="@dimen/check_in_text_size"
+                android:textColor="@color/main_font"
+                android:id="@+id/child_task_detail" />
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/main_font"
+                android:layout_height="wrap_content"
+                android:gravity="center|left|top"
+                android:textSize="@dimen/check_in_text_size"
+                android:id="@+id/child_task_due" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/child_task_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/main_font"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/thumb_up_id"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textColor="@color/md_black_1000"
+            android:textAlignment="center"
+            android:textSize="15dp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/child_task_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+            android:src="@drawable/right_arrow" />
+    </LinearLayout>
+
+</LinearLayout>

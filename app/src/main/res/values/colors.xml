@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2f2746</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="edit_text_hint">#b7b7b7</color>
+    <color name="main_font">#e4e2e2</color>
+    <color name="background">#2f2746</color>
+    <color name="list_header_bd">#22132E</color>
+    <color name="aquamarine">#1eb694</color>
+    <color name="light_blue">#0c87ff</color>
+    <color name="pink">#da479c</color>
+    <color name="orange">#ea6c52</color>
+    <color name="purple">#bd32ec</color>
+    <color name="yellow">#ecd92e</color>
+    <color name="check_in">#07ff05</color>
+    <color name="button_bg">#42275A</color>
+    <color name="tips_bg">#42275A</color>
+</resources>

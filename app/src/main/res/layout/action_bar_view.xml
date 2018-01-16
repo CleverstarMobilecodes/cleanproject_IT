@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background"
+    android:fitsSystemWindows="true"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    android:id="@+id/toolbar">
+
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_menu_pink_36dp"
+        android:layout_gravity="left"
+        android:background="@android:color/transparent"
+        android:id="@+id/drawerBtn"
+        android:paddingRight="5dp"
+        android:scaleType="centerInside" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/username_password_top_bottom_margin"
+        android:text="Welcome Back!"
+        android:gravity="center|left"
+        android:textColor="@color/main_font"
+        android:textSize="@dimen/toolbar_header_size"
+        android:scaleType="centerInside" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:scaleType="centerInside"
+        android:paddingLeft="0dp"
+        android:layout_gravity="right|end"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/logo" />
+
+</android.support.v7.widget.Toolbar>

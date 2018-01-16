@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--login screen -->
+    <dimen name="logo_width">330dp</dimen>
+    <dimen name="logo_height">300dp</dimen>
+    <dimen name="tag_line_text_size">27sp</dimen>
+    <dimen name="tag_line_top_margin">-30dp</dimen>
+    <dimen name="username_password_block_top_margin">60dp</dimen>
+    <dimen name="username_left_padding">15dp</dimen>
+    <dimen name="username_password_top_bottom_margin">10dp</dimen>
+    <dimen name="horizontal_line_width">1dp</dimen>
+    <dimen name="sign_in_top_margin">30dp</dimen>
+    <dimen name="sign_in_left_right_margin">20dp</dimen>
+    <dimen name="sign_in_text_size">20sp</dimen>
+    <dimen name="sign_up_block_top_margin">10dp</dimen>
+    <dimen name="sign_up_block_textview_text_size">15sp</dimen>
+    <dimen name="sign_up_button_height">30dp</dimen>
+    <dimen name="sign_up_button_text_size">18sp</dimen>
+    <dimen name="sign_up_button_left_margin">10dp</dimen>
+
+
+    <!--single child view in parent dashboard-->
+    <dimen name="child_padding">10dp</dimen>
+    <dimen name="check_in_padding">10dp</dimen>
+    <dimen name="task_list_bottom_margin">2dp</dimen>
+    <dimen name="tips_margin">10dp</dimen>
+    <dimen name="tips_bottom_margin">0dp</dimen>
+    <dimen name="tips_top_margin">10dp</dimen>
+    <dimen name="tops_text_size">20sp</dimen>
+    <dimen name="task_layout_text_size">18sp</dimen>
+
+    <!--Nav Drawer-->
+    <dimen name="drawer_text_size">14sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="task_view_text_size">13sp</dimen>
+    <dimen name="task_view_bottom_margin">8dp</dimen>
+
+    <!--Add Task-->
+    <dimen name="add_task_textview_left_margin">10dp</dimen>
+    <dimen name="add_task_left_margin">10dp</dimen>
+    <dimen name="add_task_top_margin">10dp</dimen>
+</resources>

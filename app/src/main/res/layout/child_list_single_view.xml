@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/childlist_left_padding"
+    android:layout_height="wrap_content">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="0dp"
+        android:layout_weight=".15"
+        android:layout_height="match_parent"
+        android:src="@drawable/default_avatar"
+        app:siRadius="1dp"
+        app:siBorderWidth="1dp"
+        app:siBorderColor="@android:color/white"
+        app:siSquare="true"
+        android:id="@+id/chid_avater_id"
+        android:layout_margin=".5dp"
+        android:layout_gravity="center" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight=".85"
+        android:gravity="center|left"
+        android:paddingLeft="@dimen/profile_edittext_margin"
+        android:id="@+id/child_fullname_id"
+        android:textSize="@dimen/check_in_text_size"
+        android:textColor="@color/main_font"
+        android:layout_height="match_parent" />
+</LinearLayout>

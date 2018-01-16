@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "774087995208",
+    "firebase_url": "https://earnit-api.firebaseio.com",
+    "project_id": "earnit-api",
+    "storage_bucket": "earnit-api.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774087995208:android:1c588ba3129072b7",
+        "android_client_info": {
+          "package_name": "com.mobiledi.earnit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774087995208-urv8t17g9fm4db0l33vgop73rj93vdgc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mobiledi.earnit",
+            "certificate_hash": "010f135e3118098faab6cd0138e4694af8525323"
+          }
+        },
+        {
+          "client_id": "774087995208-m5sm00bi03r8r623cjc7pq7qhfvdge7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWKJOPOCTc7y-nutwr4U_uR67qwbP_pVE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774087995208-m5sm00bi03r8r623cjc7pq7qhfvdge7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

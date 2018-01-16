@@ -1,0 +1,108 @@
+<resources>
+    <string name="app_name">EarnIt</string>
+    <string name="app_version">Version 1.1.5</string>
+    <string name="username_placeholder">Email</string>
+    <string name="password_placeholder">Password</string>
+    <string name="password_placeholderc">Password:</string>
+    <string name="confirm_password_placeholder">Confirm password</string>
+    <string name="confirm_password_placeholderc">Confirm password:</string>
+    <string name="new_password_placeholder">New password</string>
+    <string name="current_password_placeholder">Current password</string>
+    <string name="first_name_placeholder">First Name</string>
+    <string name="first_name_placeholderc">First Name:</string>
+    <string name="last_name_placeholder">Last Name</string>
+    <string name="last_name_placeholderc">Last Name:</string>
+    <string name="phone_placeholder">Phone</string>
+    <string name="phone_placeholderc">Phone:</string>
+    <string name="email_placeholder">Email</string>
+    <string name="email_placeholderc">Email:</string>
+    <string name="child_name">Child\'s Name:</string>
+    <string name="child_email">Child\'s Email:</string>
+    <string name="child_phone">Child\'s Phone:</string>
+
+    <string name="app_tag_line">Responsibility Made EASY!</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="sign_up_text">Don\'t have an account ?</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_child_dashboard">ChildDashboard</string>
+    <string name="login_failed">Authentication failed</string>
+    <string name="user_already_exists">A user with this email already exists</string>
+    <string name="ask_user_type">Are you a parent user?</string>
+    <string name="child_sign_up_message">Please use the EarnIt login information you received in the text</string>
+    <string name="task_despription">No description available</string>
+    <string name="no_goal_available">No goal available</string>
+    <string name="api_calling_failed">Something went wrong!!</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="change_password_text">Change Password</string>
+    <string name="add_child_text">Add Child</string>
+    <string name="msg">Please enable all permissions</string>
+    <string name="task_name_length">Only 30 Characters are allowed</string>
+    <string name="goal_name_length">Only 20 Characters are allowed</string>
+    <string name="logout">Logged out</string>
+    <string name="todo">TODO: </string>
+    <string name="firstname_empty">firstName is null</string>
+    <string name="lastname_empty">lastName is null</string>
+    <string name="task_name_too_long">Task name length is too long</string>
+    <string name="please_enter_task_name">Please enter task name first</string>
+    <string name="back_to_exit">Press back to exit</string>
+    <string name="please_ask_parent_to_add_task">Please ask your parent to add some tasks</string>
+    <string name="please_upload_picture">Please upload picture </string>
+    <string name="camera_required">Camera permission required </string>
+    <string name="storage_required">Storage permission required </string>
+    <string name="add_another_task">Do you want to add another task?</string>
+    <string name="already_submit">Already been submitted for approval</string>
+    <string name="my_task">My Tasks</string>
+    <string name="no_task_available">Please add some tasks before check-in</string>
+    <string name="no_task_for_approval">There is no tasks for approval</string>
+    <string name="no_more_task">No more task available !</string>
+    <string name="goal_too_long">Goal name is too long</string>
+    <string name="enter_goal">Please enter goal name first</string>
+    <string name="edit_goal">Edit Goal</string>
+    <string name="add_goal">New Goal</string>
+    <string name="total_account_balance">Total Account Balances: $</string>
+    <string name="cash_text">Cash: $</string>
+    <string name="goal_total">Goal\'s Total: $</string>
+    <string name="no_balance">No balance to display!!</string>
+    <string name="welcome">Welcome to Earnit!</string>
+    <string name="ready_approval">Ready for approval</string>
+    <string name="other_message">Something went wrong</string>
+    <string name="select_due_date">Please select a due date for the task</string>
+    <string name="welcome_text1">We need to know your name and phone number before you can add kids.</string>
+    <string name="welcome_text2">You can get creative with your name, but we need your real number!</string>
+    <string name="country_list">Select Country</string>
+
+<!--FLOATING MENUS-->
+    <string name="add_task">\u0020Add Tasks</string>
+    <string name="all_task">\u0020All Tasks</string>
+    <string name="approve_task">\u0020Approve Tasks</string>
+    <string name="balance">\u0020Balances</string>
+    <string name="goal">\u0020Goals</string>
+    <string name="message">\u0020Message</string>
+    <string name="view_task">\u0020View Tasks</string>
+    <string name="child_logout">\u0020Logout</string>
+    <string name="blank_space">\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+        \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+        \u0020\u0020\u0020\u0020</string>
+    <string name="email_error">"Please enter a valid e-mail address.</string>
+    <string name="password_error">Password must be at least 6 characters long.</string>
+
+
+    <string-array name="repeat_frequency">
+        <item>None</item>
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        android:fitsSystemWindows="true"
+        tools:context="com.mobiledi.earnit.activity.GoalActivity"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/goal_header"
+                android:layout_width="0dp"
+                android:layout_weight=".75"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/main_font"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textSize="@dimen/task_rejection_text_size"
+                android:scaleType="centerInside" />
+
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:layout_weight=".2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:siRadius="1dp"
+                app:siBorderWidth="2dp"
+                app:siBorderColor="@android:color/white"
+                app:siSquare="true"
+                android:id="@+id/goal_avatar"
+                android:src="@drawable/default_avatar" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight=".05"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/task_rejection_text_size"
+                android:textStyle="bold"
+                android:text="..."
+                android:layout_marginLeft="-10dp"
+                android:layout_marginBottom="0dp"
+                android:gravity="bottom"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vertical_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/views_height"
+                android:layout_marginLeft="@dimen/add_task_left_margin"
+                android:layout_marginTop="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Goal Name:"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/task_layout_text_size" />
+
+                <EditText
+                    android:id="@+id/goal_name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/add_task_textview_left_margin"
+                    android:layout_marginRight="@dimen/add_task_textview_left_margin"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/amount_edittext_border"
+                    android:hint="Goal Name"
+                    android:imeOptions="actionNext"
+                    android:paddingLeft="@dimen/add_task_textview_left_margin"
+                    android:singleLine="true"
+                    android:inputType="textCapSentences"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/check_in_text_size"
+                    android:textColorHint="@color/edit_text_hint">
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/views_height"
+                android:layout_marginLeft="@dimen/add_task_left_margin"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8"
+                    android:text="Goal Value:"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/task_layout_text_size" />
+
+                <EditText
+                    android:id="@+id/goal_value"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/add_task_textview_left_margin"
+                    android:layout_marginRight="@dimen/add_task_textview_left_margin"
+                    android:layout_weight="1.2"
+                    android:background="@drawable/amount_edittext_border"
+                    android:hint="00"
+                    android:imeOptions="actionDone"
+                    android:paddingLeft="@dimen/add_task_textview_left_margin"
+                    android:singleLine="true"
+                    android:textAlignment="textStart"
+                    android:inputType="number"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/check_in_text_size"
+                    android:textColorHint="@color/edit_text_hint" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/views_height"
+                android:layout_marginTop="@dimen/goal_button_button_top_margin"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sign_in_round"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/task_layout_text_size" />
+
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/sign_in_round"
+                    android:text="Save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/main_font"
+                    android:textSize="@dimen/task_layout_text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/loadingPanel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:indeterminateTintMode="src_atop"
+            android:indeterminateTint="@color/pink"/>
+    </RelativeLayout>
+</FrameLayout>
